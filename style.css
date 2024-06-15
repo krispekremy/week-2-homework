@@ -1,0 +1,108 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Above I set the font-family for the entire page all at once, because its in the html element. */
+body {
+    background-color: #3E6617;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+/*The code above sets the background color, and then gives every pad a little bit of margin on the left right and top. */
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    color: magenta;
+}
+/* Here I've used the header1 element to align the text, give it a text shadow with 1px of offset on x and y, 2px of blur*/
+h2 {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 20px #9933ff;
+}
+/*Above I've set the header2 elmeent to have white text, be centered, and have a pink shadow*/
+#navigate {
+    filter: drop-shadow(5px 1px 5px blue);
+}
+/*Here I've used the id selector on navigate to set a blue drop shadow*/
+h3{
+    text-align: center;
+    color: blue;
+    text-shadow: 1px 1px 2px blueviolet;
+}
+/*Above the text for header3 has been set to center, be blue, and have a dropshadow of blueviolet and the x y and blur values displayed*/
+ul {
+    list-style: hobbySymbols;
+}
+/*Here is where I've set the list style to hobbySymbols, which I've definede below. This gave me all the custom emojis for each bullet point*/
+img {
+    border-radius: 1rem;
+    box-shadow: 25px, 25px, 2px, 5px, purple;
+    display: block;
+    margin: 0 auto;
+}
+/*This above code gave all of my images 1rem of border, a little box shadow (which I still don't see what it did), and I also made all the images be centered on the page instead of the left or the right with the display and margin code.*/
+a:hover {
+    color: hotpink;
+}
+
+/*Here I've set all the links to have the color hotpink when they're hovered over.*/
+.vidcaption {
+    max-width: 600px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    line-height: 1.4;
+}
+/*this is where I styled the text below each video on the videos page by selecting the vidcaption class.*/
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+/* This code above I used to make my youtube videos be centered.*/
+#fampic {
+    float: inline-end;
+}
+/*Here I selected the id fampic to make the photo on the right side of the page with the float attribute.*/
+#intro {
+    text-align: center;
+}
+/*I centered the text in my intro paragraph here.*/
+@counter-style hobbySymbols {
+    system: fixed;
+    symbols: "\1F94F" "\1F0CF" "\1F4BF" "\1F32F" "\1F46A" "\1F941" "\1F9D7" "\1F923" "\1F5FE" 
+}
+/*This is where I defined the counter style for my lists.*/
+p {
+    text-align: center;
+}
+/*I aligned all the text in paragraph elements with this code.*/
+table, th, td {
+    border: 1px dotted
+}
+/*I decided to have my table have a dotted border.*/
+table {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/* This is how I styled the table element. I made it a bit smaller, and centered it.*/
+input[type=text], select {
+    width:100%;
+    padding:12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/*I used this final bit of code to style my form.  */
+li:hover {
+    font-size: 400%;
+    text-align:center;
+}
+
+}
